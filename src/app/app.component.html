@@ -44,7 +44,15 @@
   </div>
   <div class="column column-2">
     <div class="box tweet">
-
+      <div class="header-input" [ngClass]="{focus: inFocus}">
+          <div class="profile-img-small" >
+              <img src="/assets/boy.png" alt="">
+            </div>
+        <div class="input">
+           
+            <textarea (click)="focus()" placeholder="What's Happening?" cols="50" rows="1"></textarea>
+        </div>
+      </div>
     </div>
   </div>
   <div class="column column-3">

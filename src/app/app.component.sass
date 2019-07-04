@@ -19,8 +19,10 @@ header
       &-2
         width: 51%
         text-align: center
+        margin: 10px
       &-3
         width: 24%
+        margin-left: 3px
         text-align: right
     
     .box
@@ -31,6 +33,34 @@ header
     .tweet
         width: 100%
         max-width: 100%
+
+        .header-input
+            height: 58px
+            background: #1c3246
+            border-bottom: 1px solid #38444d
+            position: relative
+            transition: .2s
+
+        .input
+            top: 11px
+            position: absolute
+            width: 95%
+            max-width: 530px
+            right: 10px
+            height: 36px
+            textarea
+                width: 100%
+                box-sizing: border-box
+                border: 2px solid #1d435f
+                background: #10171d
+                color: #1B95E0
+                font-size: 14px
+                padding: 8px
+                border-radius: 10px
+                height: 100%
+                transition: .1s
+                resize: none
+
 
 .profile
 
@@ -76,3 +106,23 @@ header
             color: #2696dd
             font-weight: bold
     
+.profile-img-small
+        height: 32px
+        width: 32px
+        border-radius: 50px 
+        background: white
+        position: absolute
+        top: 12px
+        left: 28px
+        text-align: center
+        border: 1px solid black
+        overflow: hidden
+        img
+            max-height: 32px
+
+
+.focus
+    transition: .2s
+    height: 116px !important
+    textarea
+        height: 60px !important

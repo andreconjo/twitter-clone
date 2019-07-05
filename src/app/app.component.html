@@ -53,10 +53,10 @@
         </div>
         <div class="input">
 
-          <textarea (click)="focus()" placeholder="What's Happening?" cols="50" rows="1"></textarea>
+          <textarea (click)="focus()" placeholder="What's Happening?" #tweet cols="50" rows="1"></textarea>
 
           <div class="actions">
-            <button [ngClass]="{'display-none': !inFocus}" class="btn-tweet">Tweet</button>
+            <button [ngClass]="{'display-none': !inFocus}" (click)="pushTweet(tweet.value)" class="btn-tweet">Tweet</button>
           </div>
         </div>
       </div>
@@ -64,8 +64,8 @@
 
 
     </div>
-    <div class="box-tweet">
-      <app-tweets></app-tweets>
+    <div class="box-tweet" *ngFor="let tweet of news">
+      <app-tweets [item]=tweet></app-tweets>
     </div>
   </div>
   <div class="column column-3">

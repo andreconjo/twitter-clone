@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-tweets',
@@ -7,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TweetsComponent implements OnInit {
 
+  @Input()
+  public item: any = {
+    name: "Carregando...",
+    username: "",
+    tweet: "Carregando..."
+  }
   constructor() { }
 
   ngOnInit() {

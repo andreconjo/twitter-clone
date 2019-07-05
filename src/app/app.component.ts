@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -8,9 +8,26 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'twitter-clone';
 
-  public inFocus: boolean = true
+  public inFocus: boolean = false
+
+  
+  public news: any[] = [{
+    name: "Andre Conjo",
+    username: "@andreconjo",
+    tweet: "Não sei oq publicar no meu primeiro tweet."
+  }]
 
   focus() {
     this.inFocus = !this.inFocus
+  }
+
+  pushTweet(tweet: string) {
+    console.log(tweet)
+    this.news.push({
+      name: "Andre Conjo",
+      username: "@andreconjo",
+      tweet: tweet
+    })
+    this.news.reverse();
   }
 }

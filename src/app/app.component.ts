@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'twitter-clone';
 
-  public inFocus: boolean
+  public inFocus: boolean = true
 
   focus() {
     this.inFocus = !this.inFocus

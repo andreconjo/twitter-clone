@@ -8,7 +8,7 @@ header
 .container   
     display: flex
     width: 100%
-    max-width: 71%
+    max-width: 1190px
     margin: 0 auto
     justify-content: space-between
 
@@ -19,7 +19,7 @@ header
       &-2
         width: 51%
         text-align: center
-        margin: 10px
+        margin: 0 10px
       &-3
         width: 24%
         margin-left: 3px
@@ -28,9 +28,19 @@ header
     .box
         border: 1px solid #38444d
         min-height: 214px
+        height: 214px
         background: #15202a
+        position: relative
+        
+        
+        &:not(:last-child)
+            margin-bottom: 10px
+    
+
 
     .tweet
+        min-height: 58px
+        height: 58px
         width: 100%
         max-width: 100%
 
@@ -39,7 +49,6 @@ header
             background: #1c3246
             border-bottom: 1px solid #38444d
             position: relative
-            transition: .2s
 
         .input
             top: 11px
@@ -58,12 +67,14 @@ header
                 padding: 8px
                 border-radius: 10px
                 height: 100%
-                transition: .1s
                 resize: none
+
+                &::placeholder
+                    color: #1B95E0
 
 
 .profile
-
+    font-weight: bold;
     .profile-background
         img
             width: 100%
@@ -120,9 +131,100 @@ header
         img
             max-height: 32px
 
+.profile-img-md
+        height: 48px
+        width: 48px
+        border-radius: 50px 
+        background: white
+        float: left
+        position: absolute
+        border: 1px solid black
+        overflow: hidden
+        margin-right: 10px
+        margin-left: -58px
+        img
+            max-height: 48px
+
 
 .focus
-    transition: .2s
-    height: 116px !important
+    height: 130px !important
     textarea
         height: 60px !important
+
+.display-none
+    display: none
+
+.actions
+    display: flex
+    justify-content: flex-end
+    margin-top: 8px
+
+
+.btn
+    cursor: pointer
+
+.btn-tweet
+    cursor: pointer
+    right: 0
+    font-size: 14px
+    font-weight: bold
+    line-height: 20px
+    padding: 6px 16px
+    white-space: nowrap
+    background: #1B7FBE
+    border-color: #1B7FBE
+    border-radius: 100px
+    color: #fff
+    transition: .1s
+    &:hover        
+        transition: .1s    
+        background: #1da1f2
+        border-color: #1da1f2
+
+
+.news
+    min-height: 117px
+    padding: 9px 12px
+    color: white
+    box-sizing: border-box
+    margin-left: 58px
+
+
+.news-identify
+    text-align: left
+    display: flex
+    height: 23px
+    overflow: hidden
+
+    .identify
+        font-size: 14px
+        margin-right: 5px
+        font-weight: bold
+        display: block
+        
+
+    .username
+        font-size: 14px
+        display: block
+        color: grey
+
+.news-content
+    display: block
+    text-align: left
+    font-size: 14px
+
+.box-tweet
+    border: 1px solid #38444d
+    min-height: 114px
+    height: 114px
+    background: #15202a
+    position: relative
+        
+        
+    &:not(:last-child)
+        margin-bottom: 10px
+    &:not(:first-child)
+        margin-top: -11px
+
+    width: 100%
+    max-width: 100%

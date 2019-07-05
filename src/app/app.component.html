@@ -41,17 +41,43 @@
         </div>
       </div>
     </div>
+    <div class="box">
+
+    </div>
   </div>
   <div class="column column-2">
-    <div class="box tweet">
+    <div class="box-tweet tweet" [ngClass]="{focus: inFocus}">
       <div class="header-input" [ngClass]="{focus: inFocus}">
-          <div class="profile-img-small" >
-              <img src="/assets/boy.png" alt="">
-            </div>
-        <div class="input">
-           
-            <textarea (click)="focus()" placeholder="What's Happening?" cols="50" rows="1"></textarea>
+        <div class="profile-img-small">
+          <img src="/assets/boy.png" alt="">
         </div>
+        <div class="input">
+
+          <textarea (click)="focus()" placeholder="What's Happening?" cols="50" rows="1"></textarea>
+
+          <div class="actions">
+            <button [ngClass]="{'display-none': !inFocus}" class="btn-tweet">Tweet</button>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+    <div class="box-tweet">
+      <div class="news">
+        <div class="news-identify">
+            <img class="profile-img-md" src="/assets/boy.png" alt="">
+          <span class="identify">
+            Andre Conjo
+          </span>
+          <span class="username">
+            @andreconjo
+          </span>
+        </div>
+        <span class="news-content">
+            Olá Não sei o que publicar no meu primeiro tweet
+        </span>
       </div>
     </div>
   </div>
@@ -59,5 +85,6 @@
     <div class="box">
 
     </div>
+    <div class="box"></div>
   </div>
 </div>

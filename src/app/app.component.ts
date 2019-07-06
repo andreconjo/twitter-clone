@@ -14,7 +14,7 @@ export class AppComponent {
   public news: any[] = [{
     name: "Andre Conjo",
     username: "@andreconjo",
-    tweet: "Não sei oq publicar no meu primeiro tweet."
+    tweet: "Estudando Front-End com Angular8 e API Com Django Rest Framework."
   }]
 
   focus() {

@@ -7,6 +7,11 @@
     .nav-item
         height: 46px
         overflow: hidden
+
+        &:hover
+            border-bottom: 2px solid #1B95E0
+            .text
+                color: #1B95E0 !important
      
         a
             text-decoration: none 
@@ -31,9 +36,55 @@
                 height: 21px
                 float: left
 
+                *
+                    background-size: cover
+
+            &:hover
+                
+                .home
+                    background-image: url('/assets/menu/Home_active.png')
+                .moments
+                    background-image: url('/assets/menu/Moments_active.png')
+                .notification
+                    background-image: url('/assets/menu/Notification_active.png')
+                .messages
+                    background-image: url('/assets/menu/Messages_active.png')
+
                 img
                     max-width: 23px
                     max-height: 19px
+                    border: none            
+
+            .home
+                background-image: url('/assets/menu/Home.png')
+                width: 23px
+                height: 19px
+
+            .moments
+                background-image: url('/assets/menu/Moments.png')
+                width: 23px
+                height: 21px
+
+            .notification
+                background-image: url('/assets/menu/Notification.png')
+                width: 23px
+                height: 21px
+
+            .messages
+                background-image: url('/assets/menu/Messages.png')
+                width: 23px
+                height: 21px
+
+
+         
+.active
+    border-bottom: 2px solid #1B95E0
+    .text
+        color: #1B95E0 !important
+
+    .icon
+        .home
+            background-image: url('/assets/menu/Home_active.png') !important
 
     nav
         float: left
